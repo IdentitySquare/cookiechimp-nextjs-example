@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,9 +25,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* CookieChimp script MUST load first */}
+        <Script
+          src="https://cookiechimp.com/widget/K8ktWD.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Required container for privacy trigger */}
+        <div id="cookiechimp-container" />
         {children}
       </body>
     </html>

@@ -1,4 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and integrated with [CookieChimp](https://cookiechimp.com) for GDPR-compliant cookie consent management.
+
+## 🍪 CookieChimp Integration
+
+This example demonstrates how to integrate CookieChimp with a Next.js application using the App Router. The implementation includes:
+
+- **CookieChimp Script**: Loads with `beforeInteractive` strategy for proper consent management
+- **Consent Logger**: Real-time consent status checking and logging
+- **Event Listeners**: Responds to user consent changes
+- **Service-level Control**: Granular consent checking for specific services
+
+### Quick Setup
+
+1. **Get your CookieChimp Site ID**:
+   - Sign up at [CookieChimp](https://cookiechimp.com)
+   - Create a new site in your dashboard
+   - Copy your Site ID
+   - If you are running locally, ensure to have `localhost` as one of the allowed domains on the CookieChimp settings.
+
+2. **Replace the placeholder**:
+   - Open `src/app/layout.tsx`
+   - Replace `YOUR_SITE_ID` with your actual Site ID
+
+3. **Test the integration**:
+   - Run the development server (see below)
+   - Open browser DevTools → Console
+   - Interact with the cookie banner to see consent logs
+
+For detailed setup instructions, see [COOKIECHIMP_SETUP.md](./COOKIECHIMP_SETUP.md).
 
 ## Getting Started
 
@@ -22,12 +50,15 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
+### Next.js Resources
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### CookieChimp Resources
+- [CookieChimp Documentation](https://docs.cookiechimp.com) - complete integration guide
+- [Next.js Integration Guide](https://docs.cookiechimp.com/docs/installation/nextjs) - specific Next.js setup instructions
+- [CookieChimp Dashboard](https://cookiechimp.com) - manage your cookie consent settings
 
 ## Deploy on Vercel
 
