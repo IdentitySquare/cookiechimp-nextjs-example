@@ -68,7 +68,7 @@ export default function RootLayout({
 
 Replace `YOUR_SITE_ID` with your actual Site ID from the CookieChimp dashboard.
 
-3. **Add consent logger in `src/app/consent-logger.tsx`** ([open file](./src/app/consent-logger.tsx))
+3. **Add consent logger in `src/app/consent-logger.tsx` (optional)** ([open file](./src/app/consent-logger.tsx))
 
 ```1:30:src/app/consent-logger.tsx
 "use client";
@@ -125,7 +125,7 @@ export default function Home() {
    - Interact with the banner (Accept / Deny / Update)
    - You should see logs reflecting consent state
 
-This setup follows the official guide: [Next.js Integration Guide](https://docs.cookiechimp.com/docs/installation/nextjs).
+This setup follows the official guide: [Next.js Integration Guide](https://cookiechimp.com/docs/installation/nextjs).
 
 ## Getting Started
 
@@ -155,8 +155,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - [Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
 ### CookieChimp Resources
-- [CookieChimp Documentation](https://docs.cookiechimp.com) - complete integration guide
-- [Next.js Integration Guide](https://docs.cookiechimp.com/docs/installation/nextjs) - specific Next.js setup instructions
+- [CookieChimp Documentation](https://cookiechimp.com/docs) - complete integration guide
+- [Next.js Integration Guide](https://cookiechimp.com/docs/installation/nextjs) - specific Next.js setup instructions
 - [CookieChimp Dashboard](https://cookiechimp.com) - manage your cookie consent settings
 
 ## Deploy on Vercel
